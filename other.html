@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    #a {
+display: none;
+
+    }
+</style>
+
+
+</head>
+<body>
+
+<input type="text" id = "i">
+<button id="b">Add Item</button>
+<Ol id="ol">
+<li>Eggs</li>
+<li>Milk</li>
+<li>Bread</li>
+</Ol>
+<script>
+let b = document.getElementById("b")
+let d = document.getElementById("i")
+let ol = document.getElementById("ol")
+b.onclick = function () {
+let li = document.createElement("li")
+li.innerText = d.value;
+ol.appendChild(li);
+
+b.value = "";
+
+
+}
+
+</script>
+
+
+</body>
+
+</html>
